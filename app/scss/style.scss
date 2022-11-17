@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+  
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+:focus,
+:active {
+    outline: none;
+}
+  
+a:focus,
+a:active {
+    outline: none;
+}
+  
+nav,
+footer,
+header,
+aside {
+    display: block;}
+  
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+  
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+  
+input::-ms-clear {
+    display: none;
+}
+  
+button {
+    cursor: pointer;
+}
+  
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+  
+a,
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+ul li {
+    list-style: none;
+}
+  
+img {
+    vertical-align: top;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Gilroy Regular'),
+        url('/fonts/gil/Gilroy-Regular.woff') format('woff'),
+        url('/fonts/gil/Gilroy-Regular.ttf') format('ttf'),
+        url('/fonts/gil/Gilroy-Regular.eot') format('eot');
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Gilroy Medium'),
+        url('/fonts/gil/Gilroy-Medium.woff') format('woff'),
+        url("/fonts/gil/Gilroy-Medium.ttf") format('ttf'),
+        url("/fonts/gil/Gilroy-Medium.eot") format('eot');
+}
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Gilroy SemiBold'),
+        url('/fonts/gil/Gilroy-SemiBold.woff') format('woff'),
+        url("/fonts/gil/Gilroy-SemiBold.ttf") format('ttf'),
+        url("/fonts/gil/Gilroy-SemiBold.eot") format('eot');
+}
+@font-face {
+    font-family: 'GoogleSansRegular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Google Sans Regular'),
+        url('/fonts/gsr/GoogleSans-Regular.woff') format('woff'),
+        url("/fonts/gsr/GoogleSans-Regular.ttf") format('ttf'),
+        url("/fonts/gsr/GoogleSans-Regular.eot") format('eot');
+}
+@font-face {
+    font-family: 'SofiaPro';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Sofia Pro Medium'),
+        url('/fonts/sp/SofiaProMedium.woff') format('woff'),
+        url("/fonts/sp/SofiaProMedium.ttf") format('ttf'),
+        url("/fonts/sp/SofiaProMedium.eot") format('eot');
+}
+@font-face {
+    font-family: 'SofiaPro';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Sofia Pro Bold'),
+        url('/fonts/sp/SofiaProBold.woff') format('woff'),
+        url("/fonts/sp/SofiaProBold.ttf") format('ttf'),
+        url("/fonts/sp/SofiaProBold.eot") format('eot');
+}
+
+body {
+    margin: 0 auto;
+}
+.r{
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.m{
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+
+}
+.s{
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+
+}
+.gs{
+    font-family: 'GoogleSansRegular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.spm{
+    font-family: 'SofiaPro';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+}
+.spb{
+    font-family: 'SofiaPro';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
