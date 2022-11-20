@@ -144,41 +144,169 @@ h6 {
 body {
     margin: 0 auto;
 }
-.r{
-    font-family: 'Gilroy';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
+.main{
+    &-left{
+        width: 1043px;
+    }
+    &-left__panel{
+        background-color: #F6F7FB;
+        width: 0;
+        height: 100%;
+        transition: .5s;
+    }
+    &-left__panel-active{
+        width: 131px;
+    }
 }
-.m{
-    font-family: 'Gilroy';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40px;
+.header{
+    &-body{
+        display: flex;
+        align-items: center;
+        background-color: #F6F7FB;
 
-}
-.s{
-    font-family: 'Gilroy';
-    font-weight: 600;
-    font-style: normal;
-    font-size: 40px;
+    }
+    &-btn{
+        width: 131px;
+        height: 113px;
+        background: #393D46;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        width: 88%;
+        justify-content: space-between;
 
+    }
+    &-title{
+        font-family: 'Gilroy';
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #000000;
+        margin-left: 44px;
+    }
+    &-search{
+        display: flex;
+    }
+    &-form{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &-form__icon{
+        position: absolute;
+        margin: 14px 13px;
+    }
+    &-input{
+        padding: 16px 47px;
+        font-family: 'GoogleSansRegular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 127.7%;
+        color: #AFAFAF;
+        width: 326px;
+        height: 52px;
+        background: #fff;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.02);
+        border-radius: 26px;
+    }
+    &-input:focus{
+        box-shadow:0px 0px 5px #F86549;
+        border: 1px solid #F86549;
+        transition: .5s;
+    }
+    &-form__btn{
+        width: 52px;
+        height: 52px;
+        margin-left: 9px;
+        margin-right: 31px;
+        background: #F86549;
+        border-radius: 50%;
+        box-shadow:0px 0px 14px #F86549;
+    }
+    &__button{
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+    }
 }
-.gs{
-    font-family: 'GoogleSansRegular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
+.burger{
+    &-line{
+        width: 18px;
+        border: 1.5px solid #F6F7FB;
+    }
 }
-.spm{
-    font-family: 'SofiaPro';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 40px;
+.second{
+    margin: 6px 0 ;
 }
-.spb{
-    font-family: 'SofiaPro';
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
+.third{
+    width: 9px;
+}
+
+.panel{
+    padding-top: 56px;
+    &-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    &-item{
+        width: 77px;
+        height: 81px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &-item:nth-child(5){
+        margin-bottom: 180px;
+        
+    }
+    &-btn{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 16px;
+        background: #FFFFFF;
+        fill: #9BAAD3;
+        padding: 13px 13px;
+    }
+    &-btn__active{
+        background: #FF6647;
+        box-shadow: 0px 10px 20px rgba(88, 92, 229, 0.25);
+        fill: white;
+    }
+    &-title{
+        font-family: 'GoogleSansRegular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1C295D;
+    }
+    &-circle__item{
+        position: absolute;
+        top: 0;
+        right: 0;
+        fill: white;
+    }
+    &-circle__item-active{
+        fill: #FF8D76;
+    }
+    &-btn:hover &-circle__item{
+        fill: #FF8D76;
+    }
+    &-btn:hover{
+        background: #FF6647;
+        box-shadow: 0px 10px 20px rgba(88, 92, 229, 0.25);
+        fill: white;
+        transition: .5s;
+    }
 }
