@@ -362,6 +362,7 @@ body {
     }
 }
 .slider{
+
     &-elements{
         position: relative;
         height: 275px;
@@ -377,7 +378,18 @@ body {
     &-continents{
         display: flex;
         justify-content: space-between;
-
+    }
+    &-zone{
+        overflow: hidden;
+        width: 807,5px;
+        margin-left: 80px;
+    }
+    &-boxs{
+        height: 400px;
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
     }
     &-box{
         width: 293px;
@@ -385,7 +397,7 @@ body {
         background: #fff;
         box-shadow: 0px 100px 80px rgba(153, 165, 236, 0.05), 0px 64.8148px 46.8519px rgba(153, 165, 236, 0.037963), 0px 38.5185px 25.4815px rgba(153, 165, 236, 0.0303704), 0px 20px 13px rgba(153, 165, 236, 0.025), 0px 8.14815px 6.51852px rgba(153, 165, 236, 0.0196296), 0px 1.85185px 3.14815px rgba(153, 165, 236, 0.012037);
         border-radius: 25px;
-        margin-left: 80px;
+        margin: 15px 15px;
         position: relative;
     }
     &-box__icon{

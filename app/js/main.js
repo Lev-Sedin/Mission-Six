@@ -42,6 +42,7 @@ const tabFunc = () =>{
             image: 'images/slider/america/ny.jpeg',
             place:"America",
         }
+        
     ]
 
     const changeContent = (index) => {
@@ -74,3 +75,26 @@ const tabFunc = () =>{
 }
 
 tabFunc()
+
+const slaider = ()=>{
+    let offset  = 0 //смещение от левого края
+    const slider = document.querySelector(".slider-boxs");
+    console.log(slider)
+
+    document.querySelector('.chapter-button__left').addEventListener("click",function(){
+        offset = offset + 323;
+        if (offset > 323){
+            offset = 0
+        }
+        slider.style.left = -offset + "px"
+    });
+    document.querySelector('.chapter-button__right').addEventListener("click",function(){
+        offset = offset - 323;
+        if (offset < 0){
+            offset = 323
+        }
+        slider.style.left = -offset + "px"
+    });
+}
+
+slaider()
