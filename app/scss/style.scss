@@ -160,8 +160,13 @@ body {
     &-left__info{
         background: rgba(255, 255, 255, 0.9);
         backdrop-filter: blur(60px);
-        width: 100%;
+        max-width: 100%;
+        transition: all ease .5s;
 
+
+    }
+    &-left__info__active{
+        max-width: 88%;
     }
     &-slider{
         margin-top: 54px;
@@ -261,6 +266,7 @@ body {
 }
 
 .panel{
+    width: 131px;
     padding-top: 56px;
     &-items{
         display: flex;
@@ -386,9 +392,14 @@ body {
     }
     &-boxs{
         height: 400px;
-        display: flex;
         position: relative;
+        left: 100;
+        transition: all ease 1s;
+        display: none;
         left: 0;
+    }
+    &-boxs__active{
+        display: flex;
         transition: all ease 1s;
     }
     &-box{
