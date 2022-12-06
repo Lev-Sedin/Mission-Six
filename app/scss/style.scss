@@ -145,6 +145,7 @@ body {
     margin: 0 auto;
 }
 .main{
+    display: flex;
     &-left{
         width: 1043px;
     }
@@ -166,7 +167,7 @@ body {
 
     }
     &-left__info__active{
-        max-width: 88%;
+        max-width: 87%;
     }
     &-slider{
         margin-top: 54px;
@@ -183,6 +184,11 @@ body {
     &-info__charts{
         width: 50%;
         margin-right: 21px;
+    }
+    &-right{
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(32px);
+        width:100%;
     }
 }
 .test{
@@ -553,7 +559,7 @@ button{
     &-cards{
         margin:31px auto;
         display: grid;
-        gap: 18px 5px;
+        gap: 18px 0px;
         grid-template-columns: repeat(auto-fit, 119px);
     }
     &-card{
@@ -640,5 +646,55 @@ button{
     &-zone{
         width: 100%;
         height: 300px;
+    }
+}
+.hotel{
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 0 5px;
+    margin: 0 auto;
+    &-images{
+        margin-top: 20px;
+        position: relative;
+    }
+    &-button{
+        width: 20px;
+        height: 20px;
+        background: rgba(196, 196, 196, 0.8);
+        fill: #FFFFFF ;
+        border-radius: 50%;
+        position: absolute;
+        top: 42%;
+        transition: all ease .5s;
+
+
+    }
+    &-button:hover{
+        opacity: 0.5;
+    }
+    &-button__left{
+        left: 14px;
+    }
+    &-button__right{
+        right: 14px;
+    }
+    &-add{
+        width: 85px;
+        height: 26px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        border-radius: 5px;
+        padding: 8px 8px;
+        font-family: 'SofiaPro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 19px;
+        color: #757575;
+        position: relative;
+        top: -195px;
+        left: 10px;
+
     }
 }
