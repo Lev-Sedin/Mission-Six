@@ -124,6 +124,15 @@ h6 {
 }
 @font-face {
     font-family: 'SofiaPro';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Sofia Pro Medium'),
+        url('/fonts/sp/SofiaProRegular.woff') format('woff'),
+        url("/fonts/sp/SofiaProRegular.ttf") format('ttf'),
+        url("/fonts/sp/SofiaProRegular.eot") format('eot');
+}
+@font-face {
+    font-family: 'SofiaPro';
     font-weight: 500;
     font-style: normal;
     src: local('Sofia Pro Medium'),
@@ -152,19 +161,17 @@ body {
     &-left__panel{
         background-color: #F6F7FB;
         width: 0;
-        height: 100%;
+        height: 950px;
         transition: .5s;
     }
     &-left__panel-active{
-        width: 14.25%;
+        width: 12.5%;
     }
     &-left__info{
         background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(60px);
         max-width: 100%;
         transition: all ease .5s;
-
-
     }
     &-left__info__active{
         max-width: 87%;
@@ -651,9 +658,12 @@ button{
 .hotel{
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: 375px;
     padding: 0 5px;
     margin: 0 auto;
+    font-family: 'SofiaPro';
+    font-style: normal;
+    font-weight: 400;
     &-images{
         margin-top: 20px;
         position: relative;
@@ -686,15 +696,117 @@ button{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
         border-radius: 5px;
         padding: 8px 8px;
-        font-family: 'SofiaPro';
-        font-style: normal;
-        font-weight: 500;
         font-size: 12px;
         line-height: 19px;
         color: #757575;
         position: relative;
         top: -195px;
         left: 10px;
+    }
+    &-info{
+        margin-top: 27px;
+    }
+    &-title{
+        font-size: 20px;
+        line-height: 31px;
+        color: #000000;
+    }
+    &-info__name{
+        margin-top: 27px;
+        margin-bottom: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-info__place{
+        font-size: 16px;
+        line-height: 25px;
+        color: #757575;
+    }
+    &-heart{
+        fill:#3246D3;
+        transition: all ease .5s;
+        margin-right: 10px;
 
     }
+    &-heart:hover{
+        fill:#F86549;
+    }
+    &-heart__active{
+        fill:#F86549;
+    }
+    &-socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 27px;
+    }
+    &-social{
+        display: flex;
+    }
+    &-social__item{
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        box-shadow: -4px 14px 24px rgba(0, 0, 0, 0.06);
+        border-radius: 50%;
+        padding: 10px 11px;
+        cursor: pointer;
+        transition: all ease 0.25s;
+    }
+    &-social__item:nth-child(2){
+        margin: 0 10px;
+    }
+    &-social__item:last-child{
+        padding: 7px 9px;
+    }
+    &-social__item:hover{
+        opacity: 0.5;
+    }
+    &-price{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 31px;
+        color: #3246D3;
+    }
+    &-info__room{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-info__details{
+        display: flex;
+        align-items: flex-end;
+    }
+    &-info__detail{
+        margin-left: 3px;
+    }
+    &-info__detail:last-child{
+        margin-right: 25px;
+    }
+    &-maps{
+        margin: 45px 5px 40px;
+    }
+    &-map{
+        width: 100%;
+    }
+    &-photos__name{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-photo__item{
+        width: 111px;
+        height: 111px;
+        border-radius: 11px;
+    }
+    &-photo{
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 111px);
+        gap: 13px 15px;
+    }
+}
+#map{
+    border-radius: 10px;
+    height: 140px;
 }
